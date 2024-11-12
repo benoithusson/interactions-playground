@@ -1,0 +1,18 @@
+Based on this source : https://dev.to/luis_sserrano/how-to-structure-your-sass-code-56nj
+
+/abstracts
+Contains all the sass tools, variables, mixins, functions, placeholders, etc.
+We're using the \_global.scss to import all files so we don't bloat another file with these imports.
+
+/base
+Where we set the default styles, import custom fonts, set the default style for the headings, paragraphs, hyperlinks.
+
+/components
+These are independent, reusable pieces of the UI and you can think of components like a navbar, a header or a button.
+We should create pages that are composed by components.
+
+/pages
+It contains the specific styles for each page with the filename being the name of the page.
+
+/vendor
+Contains all the third party files that the application needs. It can be a reset css file, bootstrap, anything you could think of.
